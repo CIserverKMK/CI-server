@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace CI_Server
+namespace CIServer
 {
     /// <summary>
     /// Логика взаимодействия для MainWindow.xaml

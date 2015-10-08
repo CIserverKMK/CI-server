@@ -1,4 +1,5 @@
-﻿using System.Reflection;
+﻿using System;
+using System.Reflection;
 using System.Resources;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
@@ -20,6 +21,7 @@ using System.Windows;
 // для COM-компонентов.  Если требуется обратиться к типу в этой сборке через 
 // COM, задайте атрибуту ComVisible значение TRUE для этого типа.
 [assembly: ComVisible(false)]
+[assembly: CLSCompliant(true)]
 
 //Чтобы начать построение локализованных приложений, задайте 
 //<UICulture>CultureYouAreCodingWith</UICulture> в файле .csproj
@@ -28,7 +30,7 @@ using System.Windows;
 //атрибута NeutralResourceLanguage ниже.  Обновите "en-US" в
 //строка внизу для обеспечения соответствия настройки UICulture в файле проекта.
 
-//[assembly: NeutralResourcesLanguage("en-US", UltimateResourceFallbackLocation.Satellite)]
+[assembly: NeutralResourcesLanguage("ru-ru", UltimateResourceFallbackLocation.Satellite)]
 
 
 [assembly: ThemeInfo(
