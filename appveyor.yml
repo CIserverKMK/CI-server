@@ -1,0 +1,20 @@
+version: 1.0.{build}
+build:
+  verbosity: minimal
+
+artifacts:
+  - path: setup.iss 
+  
+deploy:
+- provider: GitHub
+  tag: organizer-v$(appveyor_build_version)
+  release: organizer-v$(appveyor_build_version)
+  description: Release description
+  auth_token:
+    secure: 4OS5X5iFBNCgmCEFg9+jAwHWQU0xJYIqsp24lkhtU7ihVHV9rRUlXWjdJ1JCAtn0
+  artifact: setup.iss
+  draft: true
+  prerelease: false
+  on:
+    branch: master
+
